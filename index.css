@@ -1,1 +1,219 @@
 /* Put your style information here! */
+
+.logo-img path {
+    fill: #036;
+  }
+
+h1 { 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 32px;
+     font-weight: 700;
+     line-height: 36px;
+    }
+
+button {
+    margin: 10px;
+    
+}
+
+p {
+    text-align: right;
+    padding: 10px 20px 0 0; 
+    
+}
+
+select {
+    margin: 1em 1em 1em 0; 
+    width: 20px; 
+}
+    
+
+.btn {
+    background-color: #E77D00;
+    border: #E77D00;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.btn:hover {
+    background-color: #E77D00;
+    border: #E77D00;
+    
+}
+
+.column  {
+    display: flex;
+    flex-direction: column;
+    
+
+    }
+
+.navbar-flex-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #fff;
+    background-color: #fff;
+    border-bottom: 5px solid #036;
+
+    
+}
+
+.service {
+    display: flex;
+    background-color: #036;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+.make-reservation {
+    flex-direction: column;
+    background-color: #036;
+    margin: 1.5em 15em;
+}
+
+.prompt {
+    flex-direction: column;
+    width: 25em;
+}
+
+.input {
+    flex-direction: column;
+    width: 25em;
+}
+
+.prompt-text {
+    color:#fff
+}
+
+
+.row  {
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0 0 0 2em;
+    height: 120px
+
+    }
+
+.actions  {
+        align-self: flex-end;
+        
+    }
+  
+.logo {
+    margin: 0 0 0 .45em;
+  }
+
+.logo a {
+        color: #036;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        
+}
+  
+  
+.navbar  {
+    display: flex;
+    
+}
+  
+.navbar a {
+    display: block;
+    padding: 1em 1em 0 1em;
+    color: #036;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+/* Removes bullet point appearance */
+li {
+    list-style-type: none;
+}
+  
+  /* Responsive for tablet */
+  @media all and (max-width: 990px) {
+    .navbar-flex-container {
+      flex-direction: column;
+    }
+    
+    .row {
+    margin: 0 .45em 0 0;
+    align-self: center;
+  }
+    
+    .navbar  {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .navbar a {
+        font-size: 1.5em;
+    }
+    
+    .btn {
+        font-size: 1.5em;
+    }
+
+    .actions {
+        align-self: center;
+        justify-content: space-around;
+
+    }
+
+    .make-reservation {
+
+        margin: 1em 5em;
+    }
+
+  }
+  
+  
+  /* ****** Responsive for phone screen ****** */
+  @media all and (max-width: 600px) {
+    h1 { 
+        text-align: center;
+    }
+   
+    .row {
+      margin: .25em 0;
+      justify-content: space-around;
+      padding: 0;
+      
+      
+  }
+    
+    .navbar {
+      flex-direction: column;
+    }
+    
+    .navbar a { 
+      text-align: center; 
+      padding: 10px;
+      /* border-top: 1px solid #003366; 
+      border-bottom: 1px solid #003366; */
+    }
+    
+    .navbar li:last-of-type a {
+      border-bottom: none;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        
+
+    }
+    .make-reservation {
+
+        margin: 1em;
+    }
+
+  }
