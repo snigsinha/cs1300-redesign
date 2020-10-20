@@ -25,6 +25,19 @@ select {
 }
     
 
+.progress-bar {
+    background-color: #E77D00;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.progress {
+    margin: 0 20em 1em 20em;
+    height: 2em;
+}
+
 .btn {
     background-color: #E77D00;
     border: #E77D00;
@@ -70,7 +83,7 @@ select {
     display: flex;
     flex-direction: column;
     background-color: #036;
-    margin: 0 15em;
+    margin: 0 15em 1em 15em;
 }
 
 .prompt {
@@ -180,10 +193,13 @@ li {
     select {
         margin: 0; 
 
-    } 
+    }
+    
+    .progress {
+        margin: 0 6.5em 1em 6.5em;
 
   }
-  
+}
   
   /* ****** Responsive for phone screen ****** */
   @media all and (max-width: 600px) {
@@ -221,17 +237,22 @@ li {
         
 
     }
-    .make-reservation {
+    .make-reservation  {
 
-        margin: 0;
+        margin: 0em;
     }
 
+    .progress {
+        margin: 0.5em ;
+
+  }
+
     .prompt {
-        width: 9em
+        width: 10em
     }
     
     .input {
-        width: 9em;
+        width: 10em;
     }
 
     
