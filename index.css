@@ -6,7 +6,7 @@
 
 h1 { 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-size: 32px;
+     font-size: 30px;
      font-weight: 700;
      line-height: 36px;
     }
@@ -39,7 +39,7 @@ select {
 
 .btn:hover {
     background-color: #E77D00;
-    border: #E77D00;
+    border: #E77D00; 
     
 }
 
@@ -61,9 +61,8 @@ select {
     
 }
 
-.service {
+.form-row {
     display: flex;
-    background-color: #036;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -78,12 +77,12 @@ select {
 
 .prompt {
     flex-direction: column;
-    width: 25em;
+    width: 10em;
 }
 
 .input {
     flex-direction: column;
-    width: 25em;
+    width: 10em;
 }
 
 .prompt-text {
@@ -96,7 +95,7 @@ select {
     flex-grow: 1;
     align-items: center;
     padding: 0 0 0 2em;
-    height: 120px
+    height: 75px
 
     }
 
@@ -172,6 +171,19 @@ li {
         margin: 1em 5em;
     }
 
+    .prompt {
+        width: 10em
+    }
+    
+    .input {
+        width: 10em;
+    }
+    
+    select {
+        margin: 0; 
+
+    } 
+
   }
   
   
@@ -213,7 +225,22 @@ li {
     }
     .make-reservation {
 
-        margin: 1em;
+        margin: 0;
     }
+
+    .prompt {
+        width: 9em
+    }
+    
+    .input {
+        width: 9em;
+    }
+
+    
+    select {
+        padding: 0 0 0 2em;
+        width: 1px; 
+    }
+
 
   }
