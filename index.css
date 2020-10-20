@@ -1,8 +1,5 @@
 /* Put your style information here! */
 
-.logo-img path {
-    fill: #036;
-  }
 
 h1 { 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -70,9 +67,10 @@ select {
 } 
 
 .make-reservation {
+    display: flex;
     flex-direction: column;
     background-color: #036;
-    margin: 1.5em 15em;
+    margin: 0 15em;
 }
 
 .prompt {
@@ -168,7 +166,7 @@ li {
 
     .make-reservation {
 
-        margin: 1em 5em;
+        margin: 0 5em;
     }
 
     .prompt {
