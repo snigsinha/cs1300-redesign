@@ -1,6 +1,3 @@
-/* Put your style information here! */
-
-
 h1 { 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-size: 30px;
@@ -8,25 +5,44 @@ h1 {
      line-height: 36px;
     }
 
-button {
-    margin: 10px;
-    
-}
-
 p {
-    text-align: right;
-    padding: 10px 20px 0 0; 
-    
+        text-align: right;
+        padding: 10px 20px 0 0; 
+        
 }
 
 select {
     margin: 0 1em 0 0; 
     width: 20px; 
 }
+
+/* BUTTONS WITH ACCENT COLOUR AND CONSISTENT LOOK */
+button {
+    margin: 10px;
+    
+}
+
+.btn {
+    background-color: #e77d00;
+    border: #e77d00;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.btn:hover {
+    background-color: #e77d00;
+    border: #e77d00; 
+    
+}
+
+
     
 
+/* PROGRESS BAR */
 .progress-bar {
-    background-color: #E77D00;
+    background-color: #e77d00;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -38,22 +54,10 @@ select {
     height: 2em;
 }
 
-.btn {
-    background-color: #E77D00;
-    border: #E77D00;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    border-radius: 20px;
 
-}
 
-.btn:hover {
-    background-color: #E77D00;
-    border: #E77D00; 
-    
-}
-
-.column  {
+/* CSS to set up flexbox grid system with alignment and layout of choice */
+.column  { 
     display: flex;
     flex-direction: column;
     
@@ -87,12 +91,12 @@ select {
     margin: 0 15em 1em 15em;
 }
 
-.prompt {
+.input {
     flex-direction: column;
     width: 10em;
 }
 
-.input {
+.prompt {
     flex-direction: column;
     width: 10em;
 }
@@ -100,6 +104,7 @@ select {
 .prompt-text {
     color:#fff
 }
+
 
 
 .row  {
@@ -115,7 +120,8 @@ select {
         align-self: flex-end;
         
     }
-  
+
+
 .logo {
     margin: 0 0 0 .45em;
   }
@@ -126,6 +132,8 @@ select {
         text-decoration: none;
         
 }
+
+
   
   
 .navbar  {
@@ -143,13 +151,22 @@ select {
     text-decoration: none;
     
 }
-/* Removes bullet point appearance */
+
+/* Removes bullet point appearance for navigation bar */
 li {
     list-style-type: none;
 }
   
   /* Responsive for tablet */
   @media all and (max-width: 990px) {
+
+    /* Increase font size because of smaller screen */
+    .navbar a, .btn {
+        font-size: 1.5em;
+    }
+
+
+    /* Center top part of page (logo,menu,action buttons) by changing flex properties */
     .navbar-flex-container {
       flex-direction: column;
     }
@@ -162,14 +179,6 @@ li {
     .navbar  {
       width: 100%;
       justify-content: space-around;
-    }
-
-    .navbar a {
-        font-size: 1.5em;
-    }
-    
-    .btn {
-        font-size: 1.5em;
     }
 
     .actions {
@@ -204,6 +213,8 @@ li {
   
   /* ****** Responsive for phone screen ****** */
   @media all and (max-width: 600px) {
+
+    /* Center everything and reduce margins and sizes to fit screen */
     h1 { 
         text-align: center;
     }
@@ -223,8 +234,6 @@ li {
     .navbar a { 
       text-align: center; 
       padding: 10px;
-      /* border-top: 1px solid #003366; 
-      border-bottom: 1px solid #003366; */
     }
     
     .navbar li:last-of-type a {
@@ -248,15 +257,6 @@ li {
 
   }
 
-    .prompt {
-        width: 10em
-    }
-    
-    .input {
-        width: 10em;
-    }
-
-    
     select {
         padding: 0 0 0 2em;
         width: 1px; 
